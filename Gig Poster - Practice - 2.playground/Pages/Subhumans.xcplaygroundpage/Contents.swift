@@ -42,17 +42,26 @@ canvas.fillColor = yellow
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
 
-//// Canvas dosen't know how to make parallolegram so have to define the vertices
+// Canvas dosen't know how to make parallolegram so have to define the vertices
 
-//// Make an list (array) of vertices
-//canvas.fillColor = purple
-//var polygonVertices: [Point] = [] //emply list of points
-//polygonVertices.append(Point(x: 25, y: 50))
-//polygonVertices.append(Point(x: 75, y: 150))
-//polygonVertices.append(Point(x: 225, y: 150))
-//polygonVertices.append(Point(x: 175, y: 50))
+// Make an list (array) of vertices
+canvas.fillColor = purple
 
-//canvas.drawCustomShape(with: polygonVertices)
+var counter = 0
+
+for x in stride(from: -125, through: 505, by:160) {
+    
+    var polygonVertices: [Point] = [] //emply list of points
+    polygonVertices.append(Point(x: x, y: 50))
+    polygonVertices.append(Point(x: -75 + (counter * 160), y: 150))
+    polygonVertices.append(Point(x: 65 + (counter * 160), y: 150))
+    polygonVertices.append(Point(x: 15 + (counter * 160), y: 50))
+
+    canvas.drawCustomShape(with: polygonVertices)
+    
+    counter += 1
+    
+}
 
 
 
