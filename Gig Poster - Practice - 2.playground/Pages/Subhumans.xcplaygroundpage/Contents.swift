@@ -48,6 +48,7 @@ canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 canvas.fillColor = purple
 
 var counter = 0
+var y = 50
 
 for x in stride(from: -125, through: 505, by:160) {
     
