@@ -117,7 +117,24 @@ for x in stride(from: -135, through: 400, by:310) {
 
 }
 
+// Orange ones now! Same thing!
+canvas.fillColor = lightRed
 
+var counter5 = 0
+
+for x in stride(from: -135, through: 400, by:155) {
+
+var polygonVertices: [Point] = [] //emply list of points
+polygonVertices.append(Point(x: x, y: 137))
+polygonVertices.append(Point(x: -75 + (counter5 * 155), y: 237))
+polygonVertices.append(Point(x: 70 + (counter5 * 155), y: 237))
+polygonVertices.append(Point(x: 10 + (counter5 * 155), y: 137))
+
+canvas.drawCustomShape(with: polygonVertices)
+
+counter5 += 1
+
+}
 
 /*:
  ## Use Source Control
