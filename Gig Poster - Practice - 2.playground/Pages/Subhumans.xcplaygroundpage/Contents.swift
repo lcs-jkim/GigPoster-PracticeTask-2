@@ -86,20 +86,19 @@ canvas.fillColor = brown
 
 var counter3 = 0
 
-for x in stride(from: -135, through: 260, by: 310) {
+for x in stride(from: -135, through: 400, by:310) {
     
     var polygonVertices: [Point] = [] //emply list of points
-      polygonVertices.append(Point(x: x, y: 50))
-    polygonVertices.append(Point(x: -75 + (counter * 155), y: 150))
-    polygonVertices.append(Point(x: 70 + (counter * 155), y: 150))
-    polygonVertices.append(Point(x: 10 + (counter * 155), y: 50))
-    
+    polygonVertices.append(Point(x: x, y: 50))
+    polygonVertices.append(Point(x: -75 + (counter3 * 155), y: 150))
+    polygonVertices.append(Point(x: 70 + (counter3 * 155), y: 150))
+    polygonVertices.append(Point(x: 10 + (counter3 * 155), y: 50))
+
     canvas.drawCustomShape(with: polygonVertices)
-      
-      counter3 += 2
+    
+    counter3 += 2
+
 }
-
-
 
 /*:
  ## Use Source Control
