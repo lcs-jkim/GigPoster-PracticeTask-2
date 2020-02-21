@@ -100,6 +100,25 @@ for x in stride(from: -135, through: 400, by:310) {
 
 }
 
+// Same thing for the top line
+var counter4 = 0
+
+for x in stride(from: -135, through: 400, by:310) {
+    
+    var polygonVertices: [Point] = [] //emply list of points
+    polygonVertices.append(Point(x: x, y: 225))
+    polygonVertices.append(Point(x: -75 + (counter4 * 155), y: 325))
+    polygonVertices.append(Point(x: 70 + (counter4 * 155), y: 325))
+    polygonVertices.append(Point(x: 10 + (counter4 * 155), y: 225))
+
+    canvas.drawCustomShape(with: polygonVertices)
+    
+    counter4 += 2
+
+}
+
+
+
 /*:
  ## Use Source Control
  
