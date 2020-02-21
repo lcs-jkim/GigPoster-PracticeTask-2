@@ -47,10 +47,10 @@ canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 // Make an list (array) of vertices
 canvas.fillColor = purple
 
+// Loop to make line of purple shapes
 var counter = 0
-var y = 50
 
-for x in stride(from: -135, through: 505, by:155) {
+for x in stride(from: -135, through: 400, by:155) {
     
     var polygonVertices: [Point] = [] //emply list of points
     polygonVertices.append(Point(x: x, y: 50))
@@ -63,6 +63,25 @@ for x in stride(from: -135, through: 505, by:155) {
     counter += 1
     
 }
+
+// Another loop for second line
+var counter2 = 0
+
+for x in stride(from: -135, through: 400, by:155) {
+    
+    var polygonVertices: [Point] = [] //emply list of points
+    polygonVertices.append(Point(x: x, y: 225))
+    polygonVertices.append(Point(x: -75 + (counter2 * 155), y: 325))
+    polygonVertices.append(Point(x: 70 + (counter2 * 155), y: 325))
+    polygonVertices.append(Point(x: 10 + (counter2 * 155), y: 225))
+
+    canvas.drawCustomShape(with: polygonVertices)
+    
+    counter2 += 1
+    
+}
+
+// Make loop for alternating brown shapes
 
 
 
