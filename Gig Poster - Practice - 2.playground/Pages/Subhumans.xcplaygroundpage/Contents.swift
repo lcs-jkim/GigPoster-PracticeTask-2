@@ -50,13 +50,13 @@ canvas.fillColor = purple
 var counter = 0
 var y = 50
 
-for x in stride(from: -125, through: 505, by:160) {
+for x in stride(from: -135, through: 505, by:155) {
     
     var polygonVertices: [Point] = [] //emply list of points
     polygonVertices.append(Point(x: x, y: 50))
-    polygonVertices.append(Point(x: -75 + (counter * 160), y: 150))
-    polygonVertices.append(Point(x: 65 + (counter * 160), y: 150))
-    polygonVertices.append(Point(x: 15 + (counter * 160), y: 50))
+    polygonVertices.append(Point(x: -75 + (counter * 155), y: 150))
+    polygonVertices.append(Point(x: 70 + (counter * 155), y: 150))
+    polygonVertices.append(Point(x: 10 + (counter * 155), y: 50))
 
     canvas.drawCustomShape(with: polygonVertices)
     
