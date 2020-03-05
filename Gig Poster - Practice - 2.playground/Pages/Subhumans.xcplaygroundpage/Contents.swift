@@ -141,9 +141,12 @@ canvas.textColor = Color.black
 canvas.drawText(message: "subhumans", at: Point(x: 18, y: 330), size: 50, kerning: 0)
 
 // now to add subtext #1
-canvas.drawText(message: "friday, april 13 1984", at: Point(x: 18, y: 430), size: 11, kerning: 0)
-canvas.drawText(message: "advance $6.50, door $7.50", at: Point(x: 18, y: 415), size: 11, kerning: 0)
-canvas.drawText(message: "no age limit", at: Point(x: 18, y: 400), size: 11, kerning: 0)
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 18, y: 430), size: 10, kerning: 0)
+canvas.drawText(message: "advance $6.50, door $7.50", at: Point(x: 18, y: 415), size: 10, kerning: 0)
+canvas.drawText(message: "no age limit", at: Point(x: 18, y: 400), size: 10, kerning: 0)
+
+// Subtext #2 now
+canvas.drawText(message: "at olympic auditorium", at: Point(x: 150, y: 430), size: 10, kerning: 0)
 /*:
  ## Use Source Control
  
