@@ -139,6 +139,10 @@ counter5 += 1
 // Ok add the title text
 canvas.textColor = Color.black
 canvas.drawText(message: "subhumans", at: Point(x: 18, y: 330), size: 50, kerning: 0)
+
+// now to add subtext #1
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 18, y: 430), size: 11, kerning: 0)
+
 /*:
  ## Use Source Control
  
