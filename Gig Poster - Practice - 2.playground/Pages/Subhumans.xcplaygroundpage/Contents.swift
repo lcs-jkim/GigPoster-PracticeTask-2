@@ -147,6 +147,8 @@ canvas.drawText(message: "no age limit", at: Point(x: 15, y: 400), size: 10, ker
 
 // Subtext #2 now
 canvas.drawText(message: "at olympic auditorium", at: Point(x: 150, y: 430), size: 10, kerning: 0)
+canvas.drawText(message: "1801 s. grand ave.", at: Point(x: 150, y: 415), size: 10, kerning: 0)
+canvas.drawText(message: "los angeles, california", at: Point(x: 150, y: 400), size: 10, kerning: 0)
 /*:
  ## Use Source Control
  
