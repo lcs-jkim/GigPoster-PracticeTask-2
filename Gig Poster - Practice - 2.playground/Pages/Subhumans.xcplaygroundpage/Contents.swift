@@ -50,7 +50,7 @@ canvas.fillColor = purple
 // Loop to make line of purple shapes
 var counter = 0
 
-for x in stride(from: -135, through: 400, by:155) {
+for x in stride(from:-135, through: 400, by:155) {
     
     var polygonVertices: [Point] = [] //emply list of points
     polygonVertices.append(Point(x: x, y: 50))
@@ -117,7 +117,7 @@ for x in stride(from: -135, through: 400, by:310) {
 
 }
 
-// Orange ones now! Same thing!
+// Orange ones now! Same thing! Use loop to change one point and the counter takes care of the rest
 canvas.fillColor = lightRed
 
 var counter5 = 0
